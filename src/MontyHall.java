@@ -20,10 +20,16 @@ public class MontyHall {
         }
     }
 
-    public 
-
-    public String reveal(int goat1){
-        return "One of the goats is behind door number " + goat1;
+    public String reveal(int user){
+        if (user == goat2) {
+            return "One of the goats is behind door number " + goat1;
+        }
+        else if (user == goat1){
+            return "One of the goats is behind door number " + goat2;
+        }
+        else{
+            return "One of the goats is behind door number " + goat1;
+        }
     }
 
     public boolean Guessed(int user){
@@ -35,7 +41,7 @@ public class MontyHall {
         }
     }
 
-    public boolean Switch(String user){
+    public boolean Switch(String user,int user1){
         if (user.equals("Yes")){
 
         }
